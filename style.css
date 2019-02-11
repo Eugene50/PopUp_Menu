@@ -1,0 +1,22 @@
+section{
+   display: flex;
+   flex-direction: row;
+   justify-content: space-evenly;
+   margin-left: 900px;
+   margin-top: 30px;
+   align-items: center;
+
+}
+#alf{
+   border-radius: 180%;
+}
+#mail,#blog,#music{
+   font-size: 18px;
+}
+a{
+   text-decoration: none;
+   color: black;
+}
+a:hover{
+   color: rgb(141, 141, 141);
+}
