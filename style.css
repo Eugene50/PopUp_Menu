@@ -1,11 +1,10 @@
-section{
+#menu{
    display: flex;
    flex-direction: row;
    justify-content: space-evenly;
    margin-left: 900px;
    margin-top: 30px;
    align-items: center;
-
 }
 #alf{
    border-radius: 180%;
@@ -20,3 +19,52 @@ a{
 a:hover{
    color: rgb(141, 141, 141);
 }
+#submenu{
+   
+   border: solid rgb(192, 189, 189) 0.5px;
+   box-shadow: 0 0 10px rgba(0,0,0,0.5);
+   width: 327px;
+   height: 460px;
+   margin-left: 900px;
+   margin-top: 12px;
+}
+#submenu:target{
+   display: block;
+}
+.wraper{
+   border: solid red;
+   display: flex;
+   flex-wrap: wrap;
+   height: 100%;
+   justify-content: right;
+}
+td{
+   text-align: center;
+   width: 20%;
+   padding: 3px;
+   margin: 0;
+}
+p{
+   margin: 0;
+   padding: 0;
+   font-size: 13px;
+}
+img{
+   margin: 0;
+   padding: 0;
+}
+td:hover{
+   border: solid rgb(192, 189, 189) 1px;
+   padding:2px;
+   margin: 0;
+}
+table{
+   height: 100%;
+}
+table tr td:focus{
+   border: 1px solid #ccc;
+   padding: 2px;
+}
+#click:focus  #submenu{display: block};
+
+
