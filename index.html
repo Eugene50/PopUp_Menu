@@ -1,46 +1,61 @@
 <html lang="en">
 <head>
-   <meta charset="UTF-8">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-   <link rel="stylesheet" href="style.css">
-   <title>Popup</title>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <link rel="stylesheet" href="style.css">
+      <title>Popup</title>
 </head>
-<body>
+<body>    
+    <div id="container">
+                <!-- верхнее меню -->   
+        <div class="menu-item" ><a href="#">Mail</a></div>
+        <div class="menu-item" ><a href="#">Blog</a></div>
+        <input id="menu-toggle" type="checkbox">
+        <label id="menu-label" for="menu-toggle">
+            <img id="menu-icon" src="img\menu.png" height="20" width="20" />
+        </label>
+        <div class="menu-item"><a href="#">Music</a></div>
+        <div><a href="#"><img id="alf" src="img/alf.jpg" alt="User"></a></div>
 
-   <div class="wraper">
-         <section id="menu">
-               <div class="item"><a href="#">Mail</a></div>
-               <div class="item"><a href="#">Music</a></div>
-               <div class="item"><img src="/img/menu.png" alt="Menu"></div>
-               <div class="item"><a href="#">Blog</a></div>
-               <div><a href="#"><img id="alf" src="/img/alf.jpg" alt="User"></a></div>
-            </section>
-         
-            <section id="submenu">
-               <table cellspacing="20" cellpadding="5">
-                  <tr>
-                     <a href="#"><td tabindex="0"><img src="/img/1.png" alt=""><p>Hangouts</p></td></a>     
-                     <a href="#"><td tabindex="0"><img src="/img/2.png" alt=""><p>Mail</p></td></a>
-                     <a href="#"><td tabindex="0"><img src="/img/3.png" alt=""><p>Drive</p></td></a>
-                  </tr>
-                  <tr>
-                     <a href="#"><td tabindex="0"><img src="/img/4.png" alt=""><p>Search</p></td></a>
-                     <a href="#"><td tabindex="0"><img src="/img/5.png" alt=""><p>Box</p></td></a>
-                     <a href="#"><td tabindex="0"><img src="/img/6.png" alt=""><p>Calendar</p></td></a>
-                  </tr>
-                  <tr>
-                     <a href="#"><td tabindex="0"><img src="/img/7.png" alt=""><p>Hangouts</p></td></a>
-                     <a href="#"><td tabindex="0"><img src="/img/8.png" alt=""><p>News</p></td></a>
-                     <a href="#"><td tabindex="0"><img src="/img/9.png" alt=""><p>Paper</p></td></a>
-                  </tr>
-                  <tr>
-                     <a href="#"><td tabindex="0"><img src="/img/10.png" alt=""><p>You</p></td></a>     
-                  </tr>
-               </table>
-            </section>
-   </div>
-   
+        <div id="wraper">
+            <div id="hidden-container">
+                <a href="#"><div class="item" tabindex="1"><img src="img/1.png" alt="">Drive</div></a>
+                <a href="#"><div class="item" tabindex="2"><img src="img/2.png" alt="">Mail</div></a>
+                <a href="#"><div class="item" tabindex="3"><img src="img/3.png" alt="">Test</div></a>
+                <a href="#"><div class="item" tabindex="4"><img src="img/4.png" alt="">Search</div></a>
+                <a href="#"><div class="item" tabindex="5"><img src="img/5.png" alt="">Blog</div></a>
+                <a href="#"><div class="item" tabindex="6"><img src="img/6.png" alt="">Calendar</div></a>
+                <a href="#"><div class="item" tabindex="7"><img src="img/7.png" alt="">Test</div></a>
+                <a href="#"><div class="item" tabindex="8"><img src="img/8.png" alt="">Test</div></a>
+                <a href="#"><div class="item" tabindex="9"><img src="img/9.png" alt="">Comunity</div></a>
+                <a href="#"><div class="item" tabindex="10"><img src="img/10.png" alt="">You</div></a> 
+            </div>
 
+            <input id="check" type="checkbox">
+            <label for="check">
+                <div id="more-btn"">
+                    <div>More</div>
+                </div>
+            </label>
+            
+            <div id="sub-container">
+                <a href="#"><div class="item" tabindex="1"><img src="img/1.png" alt="">Drive</div></a>
+                <a href="#"><div class="item" tabindex="2"><img src="img/2.png" alt="">Mail</div></a>
+                <a href="#"><div class="item" tabindex="3"><img src="img/3.png" alt="">Test</div></a>
+                <a href="#"><div class="item" tabindex="4"><img src="img/4.png" alt="">Search</div></a>
+                <a href="#"><div class="item" tabindex="5"><img src="img/5.png" alt="">Blog</div></a>
+                <a href="#"><div class="item" tabindex="6"><img src="img/6.png" alt="">Calendar</div></a>
+                <a href="#"><div class="item" tabindex="7"><img src="img/7.png" alt="">Test</div></a>
+                <a href="#"><div class="item" tabindex="8"><img src="img/8.png" alt="">Test</div></a>
+                <a href="#"><div class="item" tabindex="8"><img src="img/8.png" alt="">Test</div></a>
+                <a href="#"><div class="item" tabindex="9"><img src="img/9.png" alt="">Comunity</div></a>
+                <a href="#"><div class="item" tabindex="10"><img src="img/10.png" alt="">You</div></a>
+                <div id="footer-link">
+                    <a href="#">Even more from Google</a>
+                </div>
+            </div> 
+        </div>
+     </div>
 </body>
 </html>
