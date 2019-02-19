@@ -42,7 +42,7 @@ img {
 }
 
 #wraper {
-   height: 480px;
+   height: 456px;
    width: 310px;
    margin-left: 300px;
    overflow: auto;
@@ -50,20 +50,38 @@ img {
    border: solid rgb(192, 189, 189) 0.5px;
    box-shadow: 0 0 10px rgba(0,0,0,0.5);
    display: none;
-   position: absolute;
-   margin-top: 300px;
    margin-left: 0px;
 }
 
-#container-more-btn {
-   background-color: rgb(230, 222, 222);
-   height: 40px;
-   text-align: center;
-   width: 326px;
+#sub-checkbox{
+   visibility: hidden;
+   margin-top: -30px;
 }
 
-#check{
+#sub-checkbox:focus ~ #more-label p {
+   outline: 1px solid blue;
+}
+
+#sub-checkbox:checked ~ label {
    display: none;
+}
+
+#sub-checkbox:checked ~ #sub-container  {
+   display: flex;
+}
+
+#main-checkbox:checked ~ label{
+   display: block;
+   width: 20px;
+   height: 20px;
+}
+
+#main-checkbox:focus ~ #menu-label{
+   outline: 1px solid blue;
+}
+
+#main-checkbox:checked ~ #wraper {
+   display: block;
 }
 
 #more-btn {
@@ -76,13 +94,9 @@ img {
    padding-bottom: 10px;
 }
 
-#more-btn:hover {
+#more-label p:hover {
    cursor: pointer;
    background-color: grey;
-}
-
-#check:checked ~ #sub-container  {
-   display: flex;
 }
 
 #hidden-container {
@@ -117,21 +131,35 @@ img {
  }
 
 #alf{
-   border-radius: 180%;
+   border-radius: 180px;
 }
 
-#menu-toggle {
-   display: none;
+#main-checkbox {
+   visibility: hidden;
 }
  
-#menu-toggle:checked ~ #wraper {
-   display: block;
-}
-
 #menu-icon {
    cursor: pointer;
+   margin-top: -10px;
 }
 
 .menu-item a:hover {
    text-decoration: underline;
+}
+
+#blog {
+   margin-right: -40px;
+}
+
+#more-label p {
+   height: 30px;
+   width: 309px;
+   background-color: rgb(226, 226, 226);
+   text-align: center;
+   margin: 15px 0 0 0;
+   padding-top: 7px;
+}
+
+#more-label {
+   cursor: pointer;
 }
