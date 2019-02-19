@@ -24,7 +24,7 @@ img {
    margin-left: 850px;
 }
 
-.item{
+.item {
    width: 85px;
    height: 85px;
    text-align: center;
@@ -53,7 +53,7 @@ img {
    margin-left: 0px;
 }
 
-#sub-checkbox{
+#sub-checkbox {
    visibility: hidden;
    margin-top: -30px;
 }
@@ -76,7 +76,7 @@ img {
    height: 20px;
 }
 
-#main-checkbox:focus ~ #menu-label{
+#main-checkbox:focus ~ #menu-label {
    outline: 1px solid blue;
 }
 
@@ -130,7 +130,7 @@ img {
    color: blue;
  }
 
-#alf{
+#alf {
    border-radius: 180px;
 }
 
